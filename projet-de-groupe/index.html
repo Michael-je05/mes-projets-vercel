@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <section class="slider-container">
+        <div class="slider-images">
+
+            <div class="slider-img">
+                <img src="mini site/cascade1.jpg" alt="1" />
+                <h1>Mike</h1>
+                <div class="details">
+                    <h2>Mike</h2>
+                    <p>web3 Developer</p>
+                </div>
+            </div>
+
+            <div class="slider-img">
+                <img src="mini site/basilique-yamoussoukro.jpg" alt="2" />
+                <h1>Samite</h1>
+                <div class="details">
+                    <h2>Samite</h2>
+                    <p>WordPress Developer</p>
+                </div>
+            </div>
+
+            <div class="slider-img">
+                <img src="mmini site/basilique-exterieur.jpg" alt="3" />
+                <h1>Hashi</h1>
+                <div class="details">
+                    <h2>Hashi</h2>
+                    <p>Java Developer</p>
+                </div>
+            </div>
+
+            <div class="slider-img active">
+                <img src="mini site/assinie.jpg" alt="4" />
+                <h1>Kaity</h1>
+                <div class="details">
+                    <h2>Kaity</h2>
+                    <p>Web Developer</p>
+                </div>
+            </div>
+
+            <div class="slider-img">
+                <img src="mini site/abidjan-plateau-novotel.jpg" alt="5" />
+                <h1>Lauren</h1>
+                <div class="details">
+                    <h2>Lauren</h2>
+                    <p>PHP Developer</p>
+                </div>
+            </div>
+
+            <div class="slider-img">
+                <img src="mmini site/abidjan-nuit-pont-hkb.jpg" alt="6" />
+                <h1>Ryan</h1>
+                <div class="details">
+                    <h2>Ryan</h2>
+                    <p>SEO Developer</p>
+                </div>
+            </div>
+
+            <div class="slider-img">
+                <img src="mini site/abidjan-plateau.jpg" alt="7" />
+                <h1>Dakes</h1>
+                <div class="details">
+                    <h2>Dakes</h2>
+                    <p>SQL Developer</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    script src="js/jQuery.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".slider-img").on("click", function () {
+                $(".slider-img").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
+</body>
+</html>
+
