@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Ehouo Michael</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Styles de base et typographie --- */
+        body {
+            font-family: 'Roboto', sans-serif; /* Police moderne et lisible */
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9; /* Arrière-plan léger */
+            color: #333;
+            max-width: 900px;
+            margin: 20px auto; /* Centre le CV sur la page */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Petite ombre pour un effet "feuille" */
+            background-color: #fff;
+        }
+
+        /* --- En-tête (Header) --- */
+        header {
+            background-color: #0056b3; /* Bleu professionnel */
+            color: white;
+            padding: 30px 40px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0 0 5px 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 0;
+            font-weight: 300;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 0.9em;
+        }
+
+        /* --- Contenu Principal (Sections) --- */
+        .section {
+            padding: 10px 40px;
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        /* --- Listes et Détails --- */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .skills-list li,
+        .tasks-list li {
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .tasks-list li::before {
+            content: '•';
+            color: #0056b3;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* --- Expérience --- */
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .job-title-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: 700;
+        }
+
+        .experience-item h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .duration {
+            color: #666;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 0.9em;
+        }
+
+        .location {
+            font-style: italic;
+            color: #666;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .summary-text {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Ehouo Michael</h1>
+            <p>Étudiant en Informatique & Développeur Passionné</p>
+        </div>
+        <div class="contact-info">
+            <p><strong>Abidjan, Côte d'Ivoire</strong></p>
+            <p>0100832571 | michaelehouo@gmail.com | linkedin.com/in/votre-profil</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>Résumé Professionnel</h2>
+            <p class="summary-text">
+                Étudiant en Licence 2 en Informatique au CERAP à Abidjan, motivé et passionné par le développement 
+                informatique. J'ai acquis une première expérience pratique lors d'un stage à la Mairie du Plateau, 
+                ce qui m'a permis de comprendre les systèmes informatiques en milieu administratif. Sérieux, attentif et 
+                désireux de monter en compétence, je recherche des opportunités pour appliquer et enrichir mes acquis techniques.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Compétences Clés</h2>
+            <ul class="skills-list">
+                <li>Développement Web <strong>(HTML, CSS, notions de JavaScript)</strong></li>
+                <li>Gestion de tâches et documents administratifs</li>
+                <li>Notions de maintenance informatique</li>
+                <li>Esprit d'analyse et résolution de problèmes</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Expérience Professionnelle</h2>
+            <div class="experience-item">
+                <div class="job-title-line">
+                    <h3>Stagiaire Informatique</h3>
+                    <span class="duration">1 mois</span>
+                </div>
+                <p class="location">Mairie du Plateau, Abidjan</p>
+                <ul class="tasks-list">
+                    <li>Assistance à la gestion informatique du service administratif.</li>
+                    <li>Participation active à la maintenance des équipements informatiques.</li>
+                    <li>Soutien technique aux agents dans l'utilisation d'outils numériques.</li>
+                    <li>Classement et traitement de documents numériques.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Formation & Langues</h2>
+            <div class="details-item">
+                <h3>Licence 2 en Informatique</h3>
+                <p><strong>CERAP, Abidjan</strong> (En cours)</p>
+            </div>
+            <div class="details-item">
+                <h3>Langues</h3>
+                <p><strong>Français</strong> (Langue maternelle), <strong>Anglais</strong> (Notions)</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
